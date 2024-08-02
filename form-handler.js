@@ -6,13 +6,13 @@ $(document).ready(function() {
         var formData = $form.serialize(); 
 
         $.ajax({
-            url: 'https://formspree.io/f/xkgwrqbg', // Substitua pelo URL do seu formulário Formspree
+            url: 'https://formspree.io/f/xkgwrqbg', 
             method: 'POST',
             data: formData,
             dataType: 'json',
             success: function() {
                 alert('Seu formulário foi enviado com sucesso!');
-                $form[0].reset(); // Limpa o formulário após o envio
+                $form[0].reset();
             },
             error: function() {
                 alert('Houve um problema ao enviar seu formulário. Por favor, tente novamente.');

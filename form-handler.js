@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $('#contact-form').on('submit', function(event) {
-        event.preventDefault(); // Evita o envio padrão do formulário
+        event.preventDefault(); 
 
         var $form = $(this);
-        var formData = $form.serialize(); // Serializa os dados do formulário
+        var formData = $form.serialize(); 
 
         $.ajax({
             url: 'https://formspree.io/f/xkgwrqbg', // Substitua pelo URL do seu formulário Formspree

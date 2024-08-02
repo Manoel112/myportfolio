@@ -16,6 +16,8 @@
     <script src="menu.js" defer></script>
 
     <title>Portfólio de Manoel Neto</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="form-handler.js" defer></script>
     <link rel="icon" href="favico1.ico"type="image/x-icon">
 </head>
 <body>
@@ -165,12 +167,12 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--portfolio-->
-
+      
         <section class="formulario">
             <div class="interface">
                 <h2 class="titulo">Fale <span>Comigo.</span></h2>
-        
-                <form action="https://formspree.io/f/xkgwrqbg" method="POST">
+    
+                <form id="contact-form">
                     <input type="text" name="name" id="name" placeholder="Seu nome completo:" required>
                     <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
                     <input type="tel" name="phone" id="phone" placeholder="Seu celular:">
@@ -179,6 +181,7 @@
                 </form>
             </div><!--interface-->
         </section><!--formulario-->
+        
         
     </main>
 
@@ -213,6 +216,9 @@
             </div><!--line-footer-->
         </div><!--interface-->
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 
 </body>
 </html>
